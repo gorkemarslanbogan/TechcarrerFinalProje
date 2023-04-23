@@ -4,9 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-    <variable
-        name="productCardObject"
-        type="com.gorkemarslanbogan.techcareerbootcampbitirme.ui.Adapter.HomePageAdapter" />
+
     </data>
 
     <LinearLayout

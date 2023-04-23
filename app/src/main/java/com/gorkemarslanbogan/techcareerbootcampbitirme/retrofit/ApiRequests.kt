@@ -26,10 +26,12 @@ interface ApiRequests {
         kullanici_adi: String) : Call<CrudResponse>
 
     @POST("sepettekiYemekleriGetir.php")
+    @FormUrlEncoded
     fun getCard(@Field("kullanici_adi")
                 kullanici_adi: String) : Call<Food>
 
     @POST("sepettenYemekSil.php")
+    @FormUrlEncoded
     fun deleteCard(@Field("sepet_yemek_id")
                    sepet_yemek_id: Int,
                    @Field("kullanici_adi")

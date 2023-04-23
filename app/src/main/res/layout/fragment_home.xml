@@ -3,13 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-    <variable
-        name="CardPageObject"
-        type="com.gorkemarslanbogan.techcareerbootcampbitirme.ui.Fragment.CardPage" />
+
     </data>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.Fragment.CardPage" />
+        tools:context=".ui.fragment.Home" >
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+    </FrameLayout>
 </layout>
