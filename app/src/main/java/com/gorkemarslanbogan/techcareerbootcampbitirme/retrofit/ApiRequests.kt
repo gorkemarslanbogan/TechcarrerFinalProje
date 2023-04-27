@@ -1,17 +1,16 @@
 package com.gorkemarslanbogan.techcareerbootcampbitirme.retrofit
 
 import com.gorkemarslanbogan.techcareerbootcampbitirme.data.entity.CrudResponse
-import com.gorkemarslanbogan.techcareerbootcampbitirme.data.entity.Food
+import com.gorkemarslanbogan.techcareerbootcampbitirme.data.entity.FoodModel
 import retrofit2.Call
 import retrofit2.http.*
 
 interface ApiRequests {
 
-    @GET("tumYemekleriGetir.php")
-    @FormUrlEncoded
-    fun getAllFood() : Call<List<Food>>
+    @GET("yemekler/tumYemekleriGetir.php")
+    fun getAllFood() : Call<FoodModel>
 
-    @POST("sepeteYemekEkle.php")
+    @POST("yemekler/sepeteYemekEkle.php")
     @FormUrlEncoded
     fun addToCard(
         @Field("yemek_adi")
@@ -25,12 +24,12 @@ interface ApiRequests {
         @Field("kullanici_adi")
         kullanici_adi: String) : Call<CrudResponse>
 
-    @POST("sepettekiYemekleriGetir.php")
+    @POST("yemekler/sepettekiYemekleriGetir.php")
     @FormUrlEncoded
     fun getCard(@Field("kullanici_adi")
-                kullanici_adi: String) : Call<Food>
+                kullanici_adi: String) : Call<FoodModel>
 
-    @POST("sepettenYemekSil.php")
+    @POST("yemekler/sepettenYemekSil.php")
     @FormUrlEncoded
     fun deleteCard(@Field("sepet_yemek_id")
                    sepet_yemek_id: Int,

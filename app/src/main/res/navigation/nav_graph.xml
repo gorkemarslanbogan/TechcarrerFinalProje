@@ -2,17 +2,30 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/home2">
+    app:startDestination="@id/HomeFragment">
     <fragment
-        android:id="@+id/home2"
+        android:id="@+id/HomeFragment"
         android:name="com.gorkemarslanbogan.techcareerbootcampbitirme.ui.fragment.Home"
         android:label="Home" >
         <action
             android:id="@+id/go_to_details"
             app:destination="@id/details" />
+        <action
+            android:id="@+id/go_to_card"
+            app:destination="@id/card" />
     </fragment>
     <fragment
         android:id="@+id/details"
         android:name="com.gorkemarslanbogan.techcareerbootcampbitirme.ui.fragment.Details"
-        android:label="Details" />
+        android:label="Details" >
+        <argument
+            android:name="food"
+            app:argType="com.gorkemarslanbogan.techcareerbootcampbitirme.data.entity.Foods"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/card"
+        android:name="com.gorkemarslanbogan.techcareerbootcampbitirme.ui.fragment.Card"
+        android:label="Card" />
 </navigation>

@@ -3,9 +3,15 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="content_desc">Cover Image</string>
-    <string name="sepete_ekle">Sepete Ekle</string>
+    <string name="add_to_card">Sepete Ekle</string>
+    <string name="sepete_eklendi">Sepete Başarıyla Eklendi</string>
     <string name="description">Açıklama</string>
+    <string name="new_product">Yeni Ürünler</string>
+    <string name="all_product">Tüm Ürünler</string>
     <string name="delivery">Teslimat Süresi</string>
     <string name="delivery_time">2 Saat</string>
+    <string name="turk_lirasi_sembol">₺</string>
+    <string name="username">gorkem_arslanbogan</string>
     <string name="str_description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using publishing packages and web page editors now use Lorem Ipsum as their default model text.</string>
+    <string name="action_bag">Action Bag</string>
 </resources>

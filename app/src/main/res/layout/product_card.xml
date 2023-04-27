@@ -9,23 +9,23 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/productCard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="15dp"
             android:layout_margin="10dp"
             android:clickable="true"
+            app:cardCornerRadius="15dp"
             app:cardElevation="7dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingBottom="15dp"
                 android:orientation="vertical"
+                android:paddingBottom="15dp"
                 tools:ignore="MissingConstraints">
 
                 <FrameLayout
@@ -35,24 +35,21 @@
                     <ImageView
                         android:id="@+id/product_image"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:adjustViewBounds="true"
-                        android:contentDescription="@string/content_desc"
-                        android:src="@drawable/ic_launcher_background" />
+                        android:layout_height="wrap_content" />
 
                     <TextView
                         android:id="@+id/product_price"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="end"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="6dp"
+                        android:background="@drawable/border_radius"
                         android:gravity="center"
                         android:lines="2"
-                        android:background="@drawable/border_radius"
-                        android:layout_marginTop="8dp"
                         android:paddingHorizontal="15dp"
-                        android:layout_marginEnd="6dp"
                         android:text="450 ₺"
-                        android:textColor="@color/purple_700"
+                        android:textColor="@color/custom_green"
                         android:textSize="18sp"
                         android:textStyle="normal"
                         tools:ignore="RtlHardcoded" />
@@ -76,10 +73,12 @@
                     android:id="@+id/add_to_card_button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
                     android:background="@drawable/button_shape"
-                    android:layout_marginHorizontal="5dp"
+                    android:drawableStart="@drawable/ic_baseline_add_shopping_cart_24"
+                    android:text="@string/add_to_card"
                     android:textSize="16sp"
-                    android:text="@string/sepete_ekle" />
+                    app:backgroundTint="#4CAF50" />
 
 
             </LinearLayout>
