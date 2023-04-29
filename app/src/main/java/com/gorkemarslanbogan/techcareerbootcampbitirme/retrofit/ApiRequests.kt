@@ -1,5 +1,6 @@
 package com.gorkemarslanbogan.techcareerbootcampbitirme.retrofit
 
+import com.gorkemarslanbogan.techcareerbootcampbitirme.data.entity.CardFoodModel
 import com.gorkemarslanbogan.techcareerbootcampbitirme.data.entity.CrudResponse
 import com.gorkemarslanbogan.techcareerbootcampbitirme.data.entity.FoodModel
 import retrofit2.Call
@@ -27,7 +28,7 @@ interface ApiRequests {
     @POST("yemekler/sepettekiYemekleriGetir.php")
     @FormUrlEncoded
     fun getCard(@Field("kullanici_adi")
-                kullanici_adi: String) : Call<FoodModel>
+                kullanici_adi: String) : Call<CardFoodModel>
 
     @POST("yemekler/sepettenYemekSil.php")
     @FormUrlEncoded

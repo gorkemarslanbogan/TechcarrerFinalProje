@@ -23,9 +23,16 @@
             app:argType="com.gorkemarslanbogan.techcareerbootcampbitirme.data.entity.Foods"
             app:nullable="true"
             android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_details_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
     </fragment>
     <fragment
         android:id="@+id/card"
         android:name="com.gorkemarslanbogan.techcareerbootcampbitirme.ui.fragment.Card"
-        android:label="Card" />
+        android:label="Card" >
+        <action
+            android:id="@+id/go_to_home"
+            app:destination="@id/HomeFragment" />
+    </fragment>
 </navigation>
